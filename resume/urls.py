@@ -9,4 +9,5 @@ urlpatterns = [
     path('certificaion', views.certification, name="certification"),
     path('contact', views.contact, name="contact"),
     path('resume', views.resume, name='resume'),
+    path('savemessage', views.contact, name="savemessage"),
 ]

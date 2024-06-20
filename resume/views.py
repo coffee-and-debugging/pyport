@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.staticfiles.storage import staticfiles_storage
+from resume.models import contactform
+
 
 def home(request):
     return render(request, "home.html")
@@ -70,3 +72,14 @@ def resume(request):
             return response
     else:
         return HttpResponse("Resume not found", status=404)
+    
+
+def contactform(request):
+    if request.method=="POST":
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        message=request.POST.get('message')
+        data=contactform(name=name, email=email, phone=phone, message=message)
+        data.save()
+    return render(request, "contact.html")
