@@ -39,6 +39,12 @@ body{
     display: block;
 }
 
+.nav-item.active{
+    font-weight: bold;
+    color: #4fffb0;
+
+}
+
 .frame {
     width: 200px;
     height: 260px;
