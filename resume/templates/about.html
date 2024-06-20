@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="frame">
+
+            <img src="{% static 'images/full.jpg' %}" alt="image" style="width: 200px; height: auto; display: block;">
+        </div>
+    </div>
+    
+    <div class="col-7 text-left text-light">
+        <h2>Namaste,</h2>
+        <p class="fs-5">I am a dedicated backend python developer and CSIT student from Nepal with deep interest in Data Science, Machine Learning, Deep Learning and Web Development.</p>
+        <p class="fs-5">I have completed several projects in these domains, which have significantly boosted my expertise and potential. I am excitedly looking forward to continuing my professional journey, sharpening my skills, potential, and expertise to tackle modern problems.</p>
+        
+    </div>
+</div>
+
+<div class="row my-2">
+    <h2 class="text-center" style="color:#4fffb0;">My tech stacks</h2>
+    <div class="d-flex justify-content-around align-items-center">
+        <img src="{% static 'images/python.png'%}" alt="python" width="70" height="70" class="img-fluid" title="Python">
+        <img src="{% static 'images/NumPy.png'%}" alt="numpy" width="70" height="70" class="img-fluid" title="Numpy">
+        <img src="{% static 'images/Pandas.png'%}" alt="pandas" width="70" height="70" class="img-fluid" title="Pandas">
+        <img src="{% static 'images/Matplotlib.png'%}" alt="matplotlib" width="70" height="70" class="img-fluid" title="Matplotlib">
+        <img src="{% static 'images/Django.png'%}" alt="django" width="70" height="70" class="img-fluid" title="Django">
+        <img src="{% static 'images/OpenCV.png'%}" alt="opencv" width="70" height="70" class="img-fluid" title="OpenCV">
+        <img src="{% static 'images/tenserflow.png'%}" alt="tenserflow" width="70" height="70" class="img-fluid" title="Tenserflow">
+        <img src="{% static 'images/seaborn.png'%}" alt="seaborn" width="70" height="70" class="img-fluid" title="seaborn">
+        <img src="{% static 'images/mysql.png'%}" alt="mysql" width="70" height="70" class="img-fluid" title="MySQL">
+        <img src="{% static 'images/linux.png'%}" alt="linux" width="70" height="70" class="img-fluid" title="Linux">
+    </div>
+</div>
+{% endblock content1 %}

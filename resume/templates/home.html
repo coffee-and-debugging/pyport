@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% load static %} {% block content1 %}
+<div class="row" my-5>
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="circular-image-container" style="display: flex; justify-content: center; align-items: center;">
+      <img class="circular-image" src="{% static 'images/profile.jpg' %}" alt="Profile" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+  </div>
+  
+  </div>
+  <div class="col-12 text-center mt-3">
+    <h4 class="title">Hi, my name is</h4>
+    <div class="name">
+      <h1>Unique Adhikari</h1>
+      <h1>I am a <span id="typed"></span></h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed", {
+          strings: ["student", "developer", "data enthusiast"],
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 1500,
+          loop: true,
+        });
+      });
+    </script>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <a
+        href="https://www.linkedin.com/in/uniqueadhikari/"
+        target="_blank"
+        class="ms-3"
+      >
+        <img
+          src="{% static 'images/linkedin.png'%}"
+          alt="linkedin"
+          width="50"
+          height="50"
+          class="social_links"
+        />
+      </a>
+
+      <a
+        href="https://github.com/coffee-and-debugging"
+        target="_blank"
+        class="ms-3"
+      >
+        <img
+          src="{% static 'images/github.png'%}"
+          alt="Github"
+          width="50"
+          height="50"
+          class="social_links"
+        />
+      </a>
+
+      <a
+        href="https://www.instagram.com/unik.adhikarii/"
+        target="_blank"
+        class="ms-3"
+      >
+        <img
+          src="{% static 'images/insta.jpg'%}"
+          alt="Instagram"
+          width="50"
+          height="50"
+          class="social_links"
+        />
+      </a>
+    </div>
+  </div>
+  {% endblock content1 %}
+</div>
